@@ -1,4 +1,5 @@
 .footer {
+  /* margin-right: 100px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,6 +16,7 @@
 .left-half {
   display: flex;
   flex-direction: column;
+  margin-right: 10vh;
 }
 .subscribe img{
   height: 2rem;
@@ -48,14 +50,16 @@
   vertical-align: middle;
 } */
 
-.right-half {
+/* .right-half {
   margin-top: 3vh;
 
   /* display: flex;
   justify-content:flex-start;
-  text-align: left; */
-}
-.right-half img{
+  text-align: left; 
+} */
+.right-half-foot img{
+  margin-right: 19vh;
+  padding-right: 3vh;
   height:33vh;
   width: 53vh;
 }
