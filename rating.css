@@ -9,7 +9,7 @@
   
   .subscription-section {
     display:flex;
-    background-color: red;
+    background-color: #E6ECF0;
     height: 50vh;
   }
   
@@ -43,7 +43,7 @@
  .right-half button {
     align-items: start;
     padding: 10px 20px;
-    background-color: #3E83EB;
+    background-color: #94bbeb;
     border: #1100ff;
     color: #fff;
     border: none;
