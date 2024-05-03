@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market FAQ</title>
-    <link rel="stylesheet" href="index.css">
     <style>
-        /* Additional CSS can be added here */
+       /* internal css we can also make other module for this css part  */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:#E6E6F0;
+            background-color: #E6E6F0;
         }
         .container {
             max-width: 800px;
@@ -28,9 +27,11 @@
         .faq-item h2 {
             margin-bottom: 10px;
             color: #333;
+            cursor: pointer; 
         }
         .faq-item p {
             color: #666;
+            display: none;
         }
         .faq-item p:last-child {
             margin-bottom: 0;
@@ -38,58 +39,97 @@
     </style>
 </head>
 <body>
-    <!-- navbar  -->
-    <div class="navbar">
-        <div class="navbar-logo">
-          <img src="img/Group 48.png" alt="Logo" width="100">
-        </div>
-        <div class="navbar-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="faq.html">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="navbar-actions">
-          <a href="login.html">Login</a>
-          <a href="register.html">Get Started for Free</a>
-        </div>
-      </div>
-      <div></div>
-      <!-- -------------------------------------------------------------------- -->
     <div class="container">
         <div class="faq-item">
-            <h2>What is the stock market?</h2>
+            <h2 onclick="toggleAnswer(this)">What is the stock market?</h2>
             <p>The stock market refers to the collection of markets and exchanges where regular activities of buying, selling, and issuance of shares of publicly-held companies take place.</p>
         </div>
         <div class="faq-item">
-            <h2>How does the stock market work?</h2>
+            <h2 onclick="toggleAnswer(this)">How does the stock market work?</h2>
             <p>The stock market works through a network of exchanges — you may have heard of the New York Stock Exchange (NYSE), Nasdaq, and others — where regular trading of company stocks takes place.</p>
             <p>Investors buy and sell shares of publicly traded companies through these exchanges, and prices are determined by supply and demand.</p>
         </div>
         <div class="faq-item">
-            <h2>What are the benefits of investing in the stock market?</h2>
+            <h2 onclick="toggleAnswer(this)">What are the benefits of investing in the stock market?</h2>
             <p>Investing in the stock market offers the potential for significant long-term growth of wealth. Stocks historically provide higher returns than other investments like bonds or savings accounts.</p>
             <p>Additionally, investing in the stock market can help beat inflation and provide income through dividends.</p>
         </div>
         <div class="faq-item">
-            <h2>How do I start investing in the stock market?</h2>
+            <h2 onclick="toggleAnswer(this)">How do I start investing in the stock market?</h2>
             <p>To start investing in the stock market, you'll need to open a brokerage account. Once you have an account, you can start buying and selling stocks.</p>
             <p>It's essential to do your research, understand the risks, and consider working with a financial advisor if you're new to investing.</p>
         </div>
         <div class="faq-item">
-            <h2>What are some common stock market terms I should know?</h2>
-            <p>Some common terms include:</p>
+            <h2 onclick="toggleAnswer(this)">What are some common stock market terms I should know?</h2>
+           <div> <p>Some common terms include:</p>
             <ul>
                 <li><strong>Stock:</strong> A share in the ownership of a company.</li>
                 <li><strong>Dividend:</strong> A portion of a company's earnings distributed to shareholders.</li>
                 <li><strong>Bull Market:</strong> A market characterized by rising prices.</li>
                 <li><strong>Bear Market:</strong> A market characterized by falling prices.</li>
                 <li><strong>Market Cap:</strong> The total value of a company's outstanding shares of stock.</li>
+            </ul></div>
+        </div>
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What factors influence stock prices?</h2>
+            <div><p>Stock prices are influenced by various factors, including:</p>
+                <ul>
+                    <li>Economic indicators</li>
+                    <li>Company performance</li>
+                    <li>Market sentiment</li>
+                    <li>Interest rates</li>
+                    <li>Political events</li>
+                    <li>Market supply and demand</li>
+                </ul></div>
+        </div>
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">How can I minimize risks when investing in the stock market?</h2>
+            <div>
+                <p>To minimize risks when investing in the stock market, you can:</p>
+            <ul>
+                <li>Diversify your portfolio</li>
+                <li>Invest for the long term</li>
+                <li>Do thorough research</li>
+                <li>Stay informed about market trends</li>
+                <li>Consider dollar-cost averaging</li>
+                <li>Set realistic investment goals</li>
+                <li>Monitor your investments regularly</li>
             </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What are the different types of stock market orders?</h2>
+            <div>
+                <p>Some common types of stock market orders include:</p>
+            <ul>
+                <li>Market order</li>
+                <li>Limit order</li>
+                <li>Stop order (or stop-loss order)</li>
+                <li>Stop-limit order</li>
+                <li>Trailing stop order</li>
+                <li>All or none order</li>
+                <li>Fill or kill order</li>
+                <li>Immediate or cancel order</li>
+            </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h2 onclick="toggleAnswer(this)">What is the difference between stocks and bonds?</h2>
+            <p>Stocks represent ownership in a company, while bonds represent debt owed by a company or government entity.</p>
+            <p>Stockholders typically have voting rights and can benefit from capital appreciation and dividends, while bondholders receive periodic interest payments and repayment of the bond's face value at maturity.</p>
         </div>
     </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
+

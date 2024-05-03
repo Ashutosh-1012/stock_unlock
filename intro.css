@@ -1,32 +1,116 @@
 body{
   background-color: #E6ECF0;
 
+
 }
+
 .container {
   display: flex;
-  margin-top: 40vh;
-  padding-top: 40vh;
-  height: 80vh;
+  /* margin-top: 40vh;
+  padding-top: 40vh; */
+  /* height: 90vh; */
   width: 100%;
+  height: 100%;
+}
+.left-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px; /* External margin */
+  padding: 20px; /* External padding */
 }
 
-.left-half,
-.right-half {
-  width: 50%;
-}
-
-.df {
+.text {
+  text-align:start;
+  margin-top: 100px;
   margin-left: 10px;
 }
 
-.left-half {
-  background-color: #E6ECEF;
+#newletter {
+  margin-top: 20px;
+
+}
+
+.form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
+.form input {
+  border-radius: 4px;
+  border: 10px solid white;
+  flex: 1;
+}
+
+.form button {
+  align-items: start;
+  /* border-radius: 15re; */
+  border: 2px solid white;
+}
+
+.description {
+  text-align: start;
+  margin-top: 20px;
+}
+
+
+/* .left-half,
+.right-half {
+  width: 50%;
+} */
+
+/* .left-half {
+ display: block;
+ justify-content: center;
+ align-items: center;
+ margin-top: 500px;
+ */
+
+  /* margin-left: 080px; */
+  /* margin-left: 30px; */
+  /* background-color: #E6ECEF; */
+  /* display: flow-root; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+
+
+#newletter input{
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  /* width: 100%; */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+
+  border-top-right-radius:0 ;
+  border-bottom-right-radius: 0;
+ }
+ #newletter button{
+  height: 3.125rem;
+  margin-left: 0;
+  padding-left: 0;
+  /* border-radius: 5rem; */
+  font-size: 15px;
+  padding: 2vh;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+    
+    
+ }
+ .form{
+  margin: 0;
+  padding: 0;
+
+ }
+/* 
 .text h1 {
   font-size: 3.8vh;
 }
@@ -44,22 +128,26 @@ form {
   display: flex;
   align-items: center;
 }
-
+*/
+/* form {
+  display: flex;
+  align-items: center;
+}
 input[type="email"] {
   width: calc(70% - 40px);
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
-}
+}  */
 
-button {
+/* button {
   padding: 10px 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 10px 10px 10px 10px;
   cursor: pointer;
-}
+} */
 
 button span {
   margin-left: 5px;
